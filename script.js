@@ -5,8 +5,8 @@ const saveButton = document.getElementById("saveButton");
 
 // for testing:
 var currentDate = new Date();
-var yesterday = new Date(currentDate);
-yesterday.setDate(currentDate.getDate() - 1);
+//var yesterday = new Date(currentDate);
+//yesterday.setDate(currentDate.getDate() - 1);
 
 let entries = [];
 
@@ -30,7 +30,7 @@ saveButton.addEventListener("click", function () {
         //   const newEntry = "New entry text"; // Replace with your new entry
         newEntry = {
             "name": inputText,
-            "timestamp": yesterday//Date.now(),  // Use a valid timestamp in ISO 8601 format
+            "timestamp": currentDate,  // Use a valid timestamp in ISO 8601 format
         }
 
         entries.push(newEntry);
