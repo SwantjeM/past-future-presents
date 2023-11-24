@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var entryTimestamp = new Date(item.timestamp);
 
         // Check if the entry's timestamp is from yesterday
-        if (entryTimestamp.getDate() === yesterday.getDate()) {
+        if (entryTimestamp.getDate() === currentDate.getDate()) {
             var li = document.createElement("li");
             li.textContent = item.name //+ ': ' + item.timestamp;
             myList.appendChild(li);
